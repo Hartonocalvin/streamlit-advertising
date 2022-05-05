@@ -12,7 +12,6 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
-from PIL import Image
 
 st.sidebar.header("Input your values:")
 def InputData():
@@ -44,10 +43,6 @@ def InputData():
 df1 = InputData()
 
 ad_data = pd.read_csv('advertising.csv')
-
-image = Image.open('Machine.jpg')
-st.image(image)
-st.markdown("<h2 style='text-align: center; '>Advertising Machine Learning With Logistic Regression</h2>", unsafe_allow_html=True)
 
 st.markdown("<h5 style='text-align: left; '>By: Calvin Hartono</h5>", unsafe_allow_html=True)
 
